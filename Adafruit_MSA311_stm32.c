@@ -22,7 +22,7 @@
  *
  */
 
-#include "Adafruit_MSA311.h"
+#include "Adafruit_MSA311_stm32.h"
 
 static Adafruit_MSA311 msa311;
 
