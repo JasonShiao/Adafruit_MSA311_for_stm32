@@ -136,7 +136,7 @@ typedef struct {
 void Adafruit_MSA311_init(void);
 bool Adafruit_MSA311_begin(I2C_HandleTypeDef *p_hi2c);
 
-uint8_t MSA311_get_partid();
+uint8_t MSA311_getPartId();
 
 void Adafruit_MSA311_setDataRate(msa311_dataRate_t dataRate);
 msa311_dataRate_t Adafruit_MSA311_getDataRate(void);
@@ -150,9 +150,9 @@ void Adafruit_MSA311_setRange(msa311_range_t range);
 msa311_range_t Adafruit_MSA311_getRange(void);
 
 void Adafruit_MSA311_read();
-float MSA311_get_x_data(void);
-float MSA311_get_y_data(void);
-float MSA311_get_z_data(void);
+float MSA311_getDataX(void);
+float MSA311_getDataY(void);
+float MSA311_getDataZ(void);
 
 void Adafruit_MSA311_enableInterrupts(bool singletap, bool doubletap,
                       bool activeX, bool activeY,

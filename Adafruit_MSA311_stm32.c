@@ -76,7 +76,7 @@ bool Adafruit_MSA311_begin(I2C_HandleTypeDef *p_hi2c) {
   return true;
 }
 
-uint8_t MSA311_get_partid() {
+uint8_t MSA311_getPartId() {
   
   uint8_t reg_buf[1] = {MSA311_REG_PARTID};
   uint8_t recv_buf[1] = {0};
@@ -295,15 +295,15 @@ void Adafruit_MSA311_read(void) {
   msa311.z_g = (float)msa311.z / scale;
 }
 
-float MSA311_get_x_data(void) {
+float MSA311_getDataX(void) {
   return msa311.x_g;
 }
 
-float MSA311_get_y_data(void) {
+float MSA311_getDataY(void) {
   return msa311.y_g;
 }
 
-float MSA311_get_z_data(void) {
+float MSA311_getDataZ(void) {
   return msa311.z_g;
 }
 
